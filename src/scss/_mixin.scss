@@ -35,3 +35,36 @@
 %p7{
 	padding: 7rem 1rem;
 }
+
+//flex
+%flex{
+	display: flex;
+}
+
+%flex-center{
+	@extend %flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%flex-between{
+	@extend %flex;
+	@extend %flex-center;
+	flex-direction: column;
+
+	@include media600{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+%flex-start{
+	@extend %flex;
+	@extend %flex-center;
+	flex-direction: column;
+
+	@include media600{
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+}
