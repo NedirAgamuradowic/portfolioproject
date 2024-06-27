@@ -84,3 +84,9 @@
 .testimonial-container{
 	@extend %grid-4;
 }
+
+// work
+.work-container{
+	@extend %grid-3;
+	gap: 0;
+}
