@@ -31,7 +31,7 @@ input{
 textarea{
 	resize: none;
 	@extend %input;
-	height: 20rem;
+	height: 15rem;
 }
 
 ::placeholder{

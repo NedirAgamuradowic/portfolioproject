@@ -5,7 +5,7 @@
 	outline: none;
 	color: $dark;
 	width: 100%;
-	padding: 1.2rem 1rem;
+	padding: .9rem 1.2rem;
 	border-radius: 5px;
 }
 
@@ -18,20 +18,11 @@
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	font-size: 2rem;
+	font-weight: 600;
 	@extend %text-center;
+	cursor: pointer;
 }
-%btn-dark{
-	@include backgroundColor($dark);
-}
-%btn-primary{
-	@include backgroundColor($primary);
-}
-%btn-light{
-	@include backgroundColor($light);
-}
-%btn-darklight{
-	@include backgroundColor($darkLight);
-}
+
 
 //  color
 @mixin backgroundColor ($color){

@@ -90,3 +90,22 @@
 	@extend %grid-3;
 	gap: 0;
 }
+
+// form
+.form{
+	@extend %grid-2;
+	gap: 1rem;
+	textarea{
+		grid-column: 1/3;
+	}
+	.btn{
+		margin-top: 1rem;
+		@extend %background-dark;
+		grid-column: 1/3;
+
+		&:hover{
+			@extend %background-primary;
+		}
+	}
+
+}
