@@ -12,3 +12,26 @@
 @mixin media900 {
 	@media ($media-900) { @content; }
 }
+
+// padding
+%p1{
+	padding: 1rem 1rem;
+}
+%p2{
+	padding: 2rem 1rem;
+}
+%p3{
+	padding: 3rem 1rem;
+}
+%p4{
+	padding: 4rem 1rem;
+}
+%p5{
+	padding: 5rem 1rem;
+}
+%p6{
+	padding: 6rem 1rem;
+}
+%p7{
+	padding: 7rem 1rem;
+}
