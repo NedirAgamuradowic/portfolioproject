@@ -1,0 +1,22 @@
+// Typography
+body{
+	font-size: 1.6rem;
+	font-family: $mainFont;
+	line-height: 1.5;
+}
+h1,h2, h3{
+	line-height: 1.2;
+	font-weight: 500;
+}
+h1{
+	font-size: 4.77rem;
+}
+h2{
+	font-size: 3.98rem;
+}
+h3{
+	font-size: 3.31rem;
+}
+p{
+	font-weight: 300;
+}

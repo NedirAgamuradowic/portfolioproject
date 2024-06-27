@@ -12,7 +12,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.4;
 }
 
 body,
@@ -58,4 +57,31 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4.77rem;
+}
+
+h2 {
+  font-size: 3.98rem;
+}
+
+h3 {
+  font-size: 3.31rem;
+}
+
+p {
+  font-weight: 300;
 }
