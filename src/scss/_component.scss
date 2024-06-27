@@ -84,7 +84,8 @@
 
 // box
 .box{
-	padding: 5rem;
+	@extend %flex-center;
+	@extend %p5;
 
 	.card__img{
 		@extend %icon-big;

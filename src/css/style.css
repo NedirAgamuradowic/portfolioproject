@@ -1,8 +1,12 @@
-.card, .process-item .card__img::after, .process-item .card__img {
+.box {
+  padding: 5rem 1rem;
+}
+
+.card, .box, .process-item .card__img::after, .process-item .card__img {
   display: flex;
 }
 
-.process-item .card__img::after, .process-item .card__img {
+.box, .process-item .card__img::after, .process-item .card__img {
   align-items: center;
   justify-content: center;
 }
@@ -261,9 +265,6 @@ p {
   }
 }
 
-.box {
-  padding: 5rem;
-}
 .box .card__img {
   margin-bottom: -0.5rem;
 }

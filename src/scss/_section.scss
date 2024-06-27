@@ -1,10 +1,14 @@
-// info
+// info award
 .info-container, .award-container{
 	@extend %grid-3;
 }
+
+// spec proces
 .spec-container, .process-container{
 	@extend %grid-4;
 }
+
+// box
 .box-container{
 	@extend %grid-4;
 	gap: 0;
