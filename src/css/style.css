@@ -2,6 +2,10 @@
   padding: 5rem 1rem;
 }
 
+.mate-container {
+  padding: 6rem 1rem;
+}
+
 .card, .about, .box, .process-item .card__img::after, .process-item .card__img {
   display: flex;
 }
@@ -21,17 +25,17 @@
   }
 }
 
-.box-container, .spec-container, .process-container, .info-container, .award-container {
+.mate-container .container, .box-container, .spec-container, .process-container, .info-container, .award-container {
   display: grid;
   gap: 3rem;
 }
 @media (min-width:600px) {
-  .box-container, .spec-container, .process-container, .info-container, .award-container {
+  .mate-container .container, .box-container, .spec-container, .process-container, .info-container, .award-container {
     gap: 2rem;
   }
 }
 @media (min-width:768px) {
-  .box-container, .spec-container, .process-container, .info-container, .award-container {
+  .mate-container .container, .box-container, .spec-container, .process-container, .info-container, .award-container {
     gap: 1.5rem;
   }
 }
@@ -44,13 +48,13 @@
 }
 
 @media (min-width:600px) {
-  .box-container, .spec-container, .process-container {
+  .mate-container .container, .box-container, .spec-container, .process-container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 }
 @media (min-width:768px) {
-  .box-container, .spec-container, .process-container {
+  .mate-container .container, .box-container, .spec-container, .process-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -81,7 +85,7 @@
   color: #fff;
 }
 
-.about__content, .box-container .box:nth-child(odd), .figma .range__skill, .javascript .range__skill, .html .range__skill, .ux .range__skill, .design .range__skill {
+.mate-container, .about__content, .box-container .box:nth-child(odd), .figma .range__skill, .javascript .range__skill, .html .range__skill, .ux .range__skill, .design .range__skill {
   background: #F4F4F4;
   color: #333333;
 }
@@ -211,7 +215,6 @@ p {
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .title__heading {
@@ -384,6 +387,11 @@ p {
   border-radius: 10px;
   height: 100%;
   width: 95%;
+}
+
+.mate-item {
+  filter: invert(100%);
+  justify-self: center;
 }
 
 .box-container {

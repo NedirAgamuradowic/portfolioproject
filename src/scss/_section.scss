@@ -68,3 +68,13 @@
 		}
 	}
 }
+
+//mate
+.mate-container{
+	@extend %p6;
+	@extend %background-light;
+
+	.container{
+		@extend %grid-4;
+	}
+}

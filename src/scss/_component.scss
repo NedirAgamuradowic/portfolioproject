@@ -159,3 +159,9 @@
 		@include range (95%);
 	}
 }
+
+// mate
+.mate-item{
+	filter: invert(100%);
+	justify-self: center;
+}
