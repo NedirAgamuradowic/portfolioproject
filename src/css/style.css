@@ -7,17 +7,17 @@
   justify-content: center;
 }
 
-.spec-container, .process-container, .info-container, .award-container {
+.box-container, .spec-container, .process-container, .info-container, .award-container {
   display: grid;
   gap: 3rem;
 }
 @media (min-width:600px) {
-  .spec-container, .process-container, .info-container, .award-container {
+  .box-container, .spec-container, .process-container, .info-container, .award-container {
     gap: 2rem;
   }
 }
 @media (min-width:768px) {
-  .spec-container, .process-container, .info-container, .award-container {
+  .box-container, .spec-container, .process-container, .info-container, .award-container {
     gap: 1.5rem;
   }
 }
@@ -30,13 +30,13 @@
 }
 
 @media (min-width:600px) {
-  .spec-container, .process-container {
+  .box-container, .spec-container, .process-container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 }
 @media (min-width:768px) {
-  .spec-container, .process-container {
+  .box-container, .spec-container, .process-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -67,6 +67,16 @@
   color: #fff;
 }
 
+.box-container .box:nth-child(odd) {
+  background: #F4F4F4;
+  color: #333333;
+}
+
+.box-container .box:nth-child(even) {
+  background: #CCCCCC;
+  color: #333333;
+}
+
 .spec-item .card__img, .award-item .card__img {
   color: #FFBC00;
 }
@@ -75,7 +85,7 @@
   font-size: 3rem;
 }
 
-.award-item .card__img, .process-item .card__img {
+.box .card__img, .award-item .card__img, .process-item .card__img {
   font-size: 5rem;
 }
 
@@ -249,4 +259,24 @@ p {
   .process-item .card__desc {
     margin-top: 0;
   }
+}
+
+.box {
+  padding: 5rem;
+}
+.box .card__img {
+  margin-bottom: -0.5rem;
+}
+.box .card__desc {
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+.box .card__heading {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.box-container {
+  gap: 0;
 }

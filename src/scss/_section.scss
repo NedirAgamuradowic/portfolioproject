@@ -5,3 +5,14 @@
 .spec-container, .process-container{
 	@extend %grid-4;
 }
+.box-container{
+	@extend %grid-4;
+	gap: 0;
+
+	.box:nth-child(odd){
+		@extend %background-light;
+	}
+	.box:nth-child(even){
+		@extend %background-darklight;
+	}
+}

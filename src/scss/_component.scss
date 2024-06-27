@@ -81,3 +81,22 @@
 		}
 	}
 }
+
+// box
+.box{
+	padding: 5rem;
+
+	.card__img{
+		@extend %icon-big;
+		margin-bottom: -0.5rem;
+	}
+	.card__desc{
+		font-size: 3rem;
+		text-transform: capitalize;
+		margin-bottom: 2rem;
+	}
+	.card__heading{
+		font-weight: 500;
+		font-size: 4rem;
+	}
+}
