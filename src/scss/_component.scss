@@ -5,14 +5,21 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-
-	&__img{
-		margin-bottom: 1.8rem;
-	}
-
+		
 	&__heading{
 		text-transform: uppercase;
 		font-size: 2.6rem;
-		margin-bottom: .5rem;
+	}
+}
+
+// info item
+.info-item{
+	.card__img{
+		@extend %icon-middle;
+		margin-bottom: 1rem;
+	}
+	.card__desc{
+		font-size: 1.7rem;
+		font-weight: 600;
 	}
 }

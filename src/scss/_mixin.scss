@@ -82,6 +82,11 @@
 // grid
 %grid{
 	display: grid;
+	gap: 3rem;
+
+	@include media600{
+		gap: 1rem;
+	}
 }
 
 %grid-2{

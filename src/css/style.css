@@ -2,8 +2,29 @@
   display: flex;
 }
 
+.info-container {
+  display: grid;
+  gap: 3rem;
+}
+@media (min-width:600px) {
+  .info-container {
+    gap: 1rem;
+  }
+}
+
+@media (min-width:600px) {
+  .info-container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
 .card {
   text-align: center;
+}
+
+.info-item .card__img {
+  font-size: 4rem;
 }
 
 *,
@@ -87,7 +108,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.31rem;
+  font-size: 2.7rem;
 }
 
 p {
@@ -107,11 +128,15 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-.card__img {
-  margin-bottom: 1.8rem;
-}
 .card__heading {
   text-transform: uppercase;
   font-size: 2.6rem;
-  margin-bottom: 0.5rem;
+}
+
+.info-item .card__img {
+  margin-bottom: 1rem;
+}
+.info-item .card__desc {
+  font-size: 1.7rem;
+  font-weight: 600;
 }
