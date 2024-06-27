@@ -68,3 +68,35 @@
 		justify-content: flex-start;
 	}
 }
+
+// grid
+%grid{
+	display: grid;
+}
+
+%grid-2{
+	@extend %grid;
+	@include media600{
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center
+	}
+}
+
+%grid-3{
+	@extend %grid;
+	@include media600{
+		grid-template-columns: repeat(3, 1fr);
+		align-items: center;
+	}
+}
+
+%grid-4{
+	@extend %grid;
+	@include media600{
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+	}
+	@include media768{
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

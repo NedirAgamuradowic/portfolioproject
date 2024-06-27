@@ -29,5 +29,5 @@ p{
 	overflow: hidden;
 	border: 1px solid red;
 
-	@extend %flex-start;
+	@extend %grid-4;
 }
