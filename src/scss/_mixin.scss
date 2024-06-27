@@ -85,7 +85,11 @@
 	gap: 3rem;
 
 	@include media600{
-		gap: 1rem;
+		gap: 2rem;
+	}
+
+	@include media768{
+		gap: 1.5rem;
 	}
 }
 

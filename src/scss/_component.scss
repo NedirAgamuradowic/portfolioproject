@@ -12,6 +12,10 @@
 	}
 }
 
+.card-container{
+	margin: 5rem 0;
+}
+
 // info item
 .info-item{
 	.card__img{
@@ -30,6 +34,18 @@
 		@extend %icon-big;
 		@extend %icon-primary;
 		margin-bottom: 1.1rem;
+	}
+	.card__heading{
+		margin-bottom: .8rem;
+	}
+}
+
+// spec item
+.spec-item{
+	.card__img{
+		@extend %icon-middle;
+		@extend %icon-primary;
+		margin-bottom: .5rem;
 	}
 	.card__heading{
 		margin-bottom: .8rem;

@@ -2,3 +2,6 @@
 .info-container, .award-container{
 	@extend %grid-3;
 }
+.spec-container{
+	@extend %grid-4;
+}
