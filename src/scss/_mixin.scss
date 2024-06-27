@@ -1,3 +1,13 @@
+//  color
+@mixin backgroundColor ($color){
+	background: $color;
+	@if ($color == $dark ){
+		color: $white;
+	}@else{
+		color: $dark;
+	}
+}
+
 // media query 600
 @mixin media600 {
 	@media ($media-600) { @content; }
@@ -98,5 +108,104 @@
 	}
 	@include media768{
 		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+// text center
+%text-center{
+	text-align: center;
+}
+
+// circle
+%circle-small{
+	width: 50px;
+	height: 50px;
+	border-radius: $borderRadius;
+}
+%circle-middle{
+	width: 100px;
+	height: 100px;
+	border-radius: $borderRadius;
+}
+%circle-big{
+	width: 150px;
+	height: 150px;
+	border-radius: $borderRadius;
+}
+
+// background
+%background-primary{
+	@include backgroundColor(($primary));
+}
+%background-dark{
+	@include backgroundColor(($dark));
+}
+%background-light{
+	@include backgroundColor(($light));
+}
+%background-darklight{
+	@include backgroundColor(($darkLight));
+}
+
+// icon
+%icon-primary{
+	color: $primary;
+}
+%icon-dark{
+	color: $dark;
+}
+%icon-white{
+	color: $white;
+}
+
+%icon-small{
+	font-size: 2rem;
+}
+%icon-middle{
+	font-size: 4rem;
+}
+%icon-big{
+	font-size: 6rem;
+}
+
+%icon-social{
+	@extend %icon-white;
+	@extend %icon-small;
+	@extend %flex-center;
+	@extend %circle-small;
+	border: 2px solid;
+	cursor: pointer;
+	&:hover{
+		@extend %background-primary;
+	}
+}
+
+%icon-process{
+	@extend %icon-big;
+	@extend %flex-center;
+	@extend%circle-big;
+	@extend %background-dark;
+	position: relative;
+	transition: all 1s;
+
+	&::after{
+		content: attr(data-process);
+		@extend %flex-center;
+		@extend %icon-middle;
+		@extend %circle-small;
+		@extend %background-primary;
+		position: absolute;
+		top: 1rem;
+		right: -1rem;
+		font-family:'Times New Roman', Times, serif;
+	}
+
+	&:hover{
+		@extend %background-primary;
+		transform: scale(1.05);
+	}
+
+	&:hover::after{
+		@extend %background-dark;
 	}
 }
