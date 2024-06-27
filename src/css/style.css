@@ -1,3 +1,12 @@
+textarea, input {
+  border: 1px solid #CCCCCC;
+  outline: none;
+  color: #333333;
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border-radius: 5px;
+}
+
 .quota {
   padding: 1rem 1rem;
 }
@@ -212,6 +221,24 @@ h3 {
 
 p {
   font-weight: 300;
+}
+
+input:focus {
+  border: 1px solid #333333;
+}
+
+textarea {
+  resize: none;
+}
+
+::-moz-placeholder {
+  color: #333333;
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #333333;
+  font-size: 2rem;
 }
 
 .container {

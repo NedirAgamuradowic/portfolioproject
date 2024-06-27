@@ -8,6 +8,16 @@
 	}
 }
 
+// input
+%input{
+	border: 1px solid $darkLight;
+	outline: none;
+	color: $dark;
+	width: 100%;
+	padding: 1.2rem 1rem;
+	border-radius: 5px;
+}
+
 // pseudo element
 @mixin range($width){
 	&{

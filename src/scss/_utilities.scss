@@ -21,6 +21,22 @@ p{
 	font-weight: 300;
 }
 
+input{
+	@extend %input;
+
+	&:focus{
+		border: 1px solid $dark;
+	}
+}
+textarea{
+	resize: none;
+	@extend %input;
+}
+::placeholder{
+	color: $dark;
+	font-size: 2rem;
+}
+
 // container
 .container{
 	min-width: $minWidth;
