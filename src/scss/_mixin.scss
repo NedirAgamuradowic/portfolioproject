@@ -1,15 +1,6 @@
-//  color
-@mixin backgroundColor ($color){
-	background: $color;
-	@if ($color == $dark ){
-		color: $white;
-	}@else{
-		color: $dark;
-	}
-}
-
 // input
 %input{
+	display: block;
 	border: 1px solid $darkLight;
 	outline: none;
 	color: $dark;
@@ -40,6 +31,16 @@
 }
 %btn-darklight{
 	@include backgroundColor($darkLight);
+}
+
+//  color
+@mixin backgroundColor ($color){
+	background: $color;
+	@if ($color == $dark ){
+		color: $white;
+	}@else{
+		color: $dark;
+	}
 }
 
 // pseudo element
