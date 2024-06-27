@@ -107,5 +107,68 @@
 			@extend %background-primary;
 		}
 	}
+}
 
+// cta
+.cta{
+	@include backgroundColor($primary);
+	@extend %text-center;
+	@extend %p7;
+	
+	h2{
+		font-size: 7rem;
+		text-transform: capitalize;
+		color: $white;
+	}
+}
+
+// footer
+.footer{
+	@extend %background-dark;
+	@extend %p2;
+
+	.container{
+		@extend %flex-between;
+		gap: 2rem;
+	}
+	.social{
+		@extend %flex;
+		gap: 1rem;
+	}
+	.icon{
+		@extend %icon-social;
+	}
+}
+
+// navbar
+.navbar{
+	background: $background url('../img/showcase.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 20% 30%;
+	@extend %p2;
+
+	.container{
+		@extend %flex-between;
+	}
+	.logo__img{
+		width: 7rem;
+	}
+	.menu{
+		@extend %flex;
+		gap: 3rem;
+	}
+
+	.menu__link{
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-weight: 500;
+		padding: 1.3rem 0;
+		color: $white;
+
+		&:hover{
+			border-bottom: 2px solid $white;
+		}
+	}
 }

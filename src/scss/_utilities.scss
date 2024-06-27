@@ -46,3 +46,7 @@ textarea{
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+.active{
+	border-bottom: 2px solid $primary;
+}
