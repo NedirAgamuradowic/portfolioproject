@@ -1,56 +1,11 @@
-.icon::after, .icon {
+.card {
   display: flex;
 }
 
-.icon::after, .icon {
-  align-items: center;
-  justify-content: center;
+.card {
+  text-align: center;
 }
 
-.icon::after {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-}
-
-.icon {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-}
-
-.icon:hover, .icon::after {
-  background: #FFBC00;
-  color: #333333;
-}
-
-.icon:hover::after, .icon {
-  background: #333333;
-  color: #fff;
-}
-
-.icon::after {
-  font-size: 4rem;
-}
-
-.icon {
-  font-size: 6rem;
-}
-
-.icon {
-  position: relative;
-  transition: all 1s;
-}
-.icon::after {
-  content: attr(data-process);
-  position: absolute;
-  top: 1rem;
-  right: -1rem;
-  font-family: "Times New Roman", Times, serif;
-}
-.icon:hover {
-  transform: scale(1.05);
-}
 *,
 *::before,
 *::after {
@@ -145,4 +100,18 @@ p {
   margin: 0 auto;
   overflow: hidden;
   border: 1px solid red;
+}
+
+.card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__img {
+  margin-bottom: 1.8rem;
+}
+.card__heading {
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
 }
