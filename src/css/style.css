@@ -1,3 +1,7 @@
+.quota {
+  padding: 1rem 1rem;
+}
+
 .box {
   padding: 5rem 1rem;
 }
@@ -6,7 +10,7 @@
   padding: 6rem 1rem;
 }
 
-.card, .about, .box, .process-item .card__img::after, .process-item .card__img {
+.author, .card, .about, .box, .process-item .card__img::after, .process-item .card__img {
   display: flex;
 }
 
@@ -392,6 +396,28 @@ p {
 .mate-item {
   filter: invert(100%);
   justify-self: center;
+}
+
+.quota {
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
+}
+
+.author {
+  align-items: center;
+}
+.author__img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  margin-right: 1.5rem;
+}
+.author__name {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 .box-container {
