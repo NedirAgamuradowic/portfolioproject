@@ -18,6 +18,30 @@
 	border-radius: 5px;
 }
 
+// button
+%btn{
+	border: none;
+	outline: none;
+	padding: .8rem 1.8rem;
+	background: transparent;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	font-size: 2rem;
+	@extend %text-center;
+}
+%btn-dark{
+	@include backgroundColor($dark);
+}
+%btn-primary{
+	@include backgroundColor($primary);
+}
+%btn-light{
+	@include backgroundColor($light);
+}
+%btn-darklight{
+	@include backgroundColor($darkLight);
+}
+
 // pseudo element
 @mixin range($width){
 	&{

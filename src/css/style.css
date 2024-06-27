@@ -7,6 +7,16 @@ textarea, input {
   border-radius: 5px;
 }
 
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.8rem;
+  background: transparent;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
 .quota {
   padding: 1rem 1rem;
 }
@@ -72,7 +82,7 @@ textarea, input {
   }
 }
 
-.about__content, .card, .title {
+.about__content, .card, .title, .btn {
   text-align: center;
 }
 
