@@ -2,18 +2,18 @@
   display: flex;
 }
 
-.info-container {
+.info-container, .award-container {
   display: grid;
   gap: 3rem;
 }
 @media (min-width:600px) {
-  .info-container {
+  .info-container, .award-container {
     gap: 1rem;
   }
 }
 
 @media (min-width:600px) {
-  .info-container {
+  .info-container, .award-container {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
@@ -23,8 +23,16 @@
   text-align: center;
 }
 
+.award-item .card__img {
+  color: #FFBC00;
+}
+
 .info-item .card__img {
   font-size: 4rem;
+}
+
+.award-item .card__img {
+  font-size: 6rem;
 }
 
 *,
@@ -139,4 +147,11 @@ p {
 .info-item .card__desc {
   font-size: 1.7rem;
   font-weight: 600;
+}
+
+.award-item .card__img {
+  margin-bottom: 1.1rem;
+}
+.award-item .card__heading {
+  margin-bottom: 0.8rem;
 }

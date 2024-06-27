@@ -23,3 +23,15 @@
 		font-weight: 600;
 	}
 }
+
+// award item
+.award-item{
+	.card__img{
+		@extend %icon-big;
+		@extend %icon-primary;
+		margin-bottom: 1.1rem;
+	}
+	.card__heading{
+		margin-bottom: .8rem;
+	}
+}
