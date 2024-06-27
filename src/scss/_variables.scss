@@ -1,3 +1,4 @@
+// color palette
 $primary:#FFBC00;
 $dark:#333333;
 $light:#F4F4F4;
@@ -7,7 +8,14 @@ $background:#67809F;
 $white:#fff;
 $black:#000;
 
+// font
 $mainFont: "Dosis", sans-serif;
 
+// width
 $maxWidth:1200px;
 $minWidth:320px;
+
+// media query
+$media-600:'min-width:600px';
+$media-768:'min-width:768px';
+$media-900:'min-width:900px';

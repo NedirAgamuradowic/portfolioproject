@@ -1,0 +1,14 @@
+// media query 600
+@mixin media600 {
+	@media ($media-600) { @content; }
+}
+
+// media query 768
+@mixin media768 {
+	@media ($media-768) { @content; }
+}
+
+// media query 900
+@mixin media900 {
+	@media ($media-900) { @content; }
+}
