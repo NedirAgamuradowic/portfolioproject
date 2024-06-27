@@ -127,18 +127,18 @@
 
 // circle
 %circle-small{
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: $borderRadius;
 }
 %circle-middle{
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border-radius: $borderRadius;
 }
 %circle-big{
-	width: 150px;
-	height: 150px;
+	width: 120px;
+	height: 120px;
 	border-radius: $borderRadius;
 }
 
@@ -171,10 +171,10 @@
 	font-size: 2rem;
 }
 %icon-middle{
-	font-size: 4rem;
+	font-size: 3rem;
 }
 %icon-big{
-	font-size: 6rem;
+	font-size: 5rem;
 }
 
 %icon-social{
@@ -200,9 +200,9 @@
 	&::after{
 		content: attr(data-process);
 		@extend %flex-center;
-		@extend %icon-middle;
 		@extend %circle-small;
 		@extend %background-primary;
+		font-size: 3rem;
 		position: absolute;
 		top: 1rem;
 		right: -1rem;

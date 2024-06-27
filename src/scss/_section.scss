@@ -2,6 +2,6 @@
 .info-container, .award-container{
 	@extend %grid-3;
 }
-.spec-container{
+.spec-container, .process-container{
 	@extend %grid-4;
 }
