@@ -153,6 +153,7 @@
 	background-position: 20% 30%;
 	@extend %p2;
 	width: 100%;
+	border-bottom: 3px solid $primary;
 
 	.container{
 		@extend %flex-between;
@@ -189,5 +190,13 @@
 
 	a{
 		color: $white;
+	}
+}
+
+
+// workpage
+.workpage{
+	.main {
+		@extend %p7;
 	}
 }

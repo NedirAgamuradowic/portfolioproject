@@ -97,7 +97,7 @@ textarea, input {
   padding: 6rem 1rem;
 }
 
-.contact__form {
+.workpage .main, .contact__form {
   padding: 7rem 1rem;
 }
 
@@ -650,6 +650,7 @@ textarea {
   background-repeat: no-repeat;
   background-position: 20% 30%;
   width: 100%;
+  border-bottom: 3px solid #FFBC00;
 }
 .navbar .logo__img {
   width: 7rem;
