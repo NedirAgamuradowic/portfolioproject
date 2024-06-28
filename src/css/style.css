@@ -60,13 +60,13 @@ select {
 }
 
 textarea, input {
-  display: block;
   border: 1px solid #CCCCCC;
   outline: none;
   color: #333333;
-  width: 100%;
-  padding: 0.9rem 1.2rem;
+  padding: 0.9rem 0 0.9rem 1.2rem;
   border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -89,15 +89,15 @@ textarea, input {
   padding: 2rem 1rem;
 }
 
-.box {
+.contact__info, .box {
   padding: 5rem 1rem;
 }
 
-.mate-container {
+.cta, .mate-container {
   padding: 6rem 1rem;
 }
 
-.cta {
+.contact__form {
   padding: 7rem 1rem;
 }
 
@@ -187,12 +187,12 @@ textarea, input {
   border-radius: 100%;
 }
 
-.form .btn:hover, .work-item span, .figma .range__skill::after, .javascript .range__skill::after, .html .range__skill::after, .ux .range__skill::after, .design .range__skill::after, .process-item .card__img:hover, .process-item .card__img::after, .footer .icon:hover {
+.work-item span, .figma .range__skill::after, .javascript .range__skill::after, .html .range__skill::after, .ux .range__skill::after, .design .range__skill::after, .process-item .card__img:hover, .process-item .card__img::after, .footer .icon:hover {
   background: #FFBC00;
   color: #333333;
 }
 
-.footer, .form .btn, .process-item .card__img:hover::after, .process-item .card__img {
+.contact__info, .footer, .form .btn, .process-item .card__img:hover::after, .process-item .card__img {
   background: #333333;
   color: #fff;
 }
@@ -293,7 +293,6 @@ textarea {
 }
 
 .container {
-  min-width: 320px;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
@@ -303,6 +302,13 @@ textarea {
   border-bottom: 2px solid #FFBC00;
 }
 
+.hide {
+  display: none;
+}
+
+.title {
+  margin-bottom: 5rem;
+}
 .title__heading {
   text-transform: uppercase;
   font-weight: 400;
@@ -604,23 +610,32 @@ textarea {
 }
 
 .form {
-  gap: 1rem;
+  gap: 1rem 0.5rem;
 }
-.form textarea {
-  grid-column: 1/3;
+@media (min-width:600px) {
+  .form textarea {
+    grid-column: 1/3;
+  }
 }
-.form .btn {
-  margin-top: 1rem;
-  grid-column: 1/3;
+@media (min-width:600px) {
+  .form .btn {
+    grid-column: 1/3;
+  }
 }
+
 .cta {
   background: #FFBC00;
   color: #333333;
 }
 .cta h2 {
-  font-size: 7rem;
+  font-size: 5rem;
   text-transform: capitalize;
   color: #fff;
+}
+@media (min-width:600px) {
+  .cta h2 {
+    font-size: 5.5rem;
+  }
 }
 
 .footer .container {
@@ -634,6 +649,7 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20% 30%;
+  width: 100%;
 }
 .navbar .logo__img {
   width: 7rem;
@@ -644,11 +660,15 @@ textarea {
 .navbar .menu__link {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   padding: 1.3rem 0;
   color: #fff;
 }
 .navbar .menu__link:hover {
   border-bottom: 2px solid #fff;
+}
+
+.contact__info a {
+  color: #fff;
 }

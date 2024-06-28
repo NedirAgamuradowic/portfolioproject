@@ -94,17 +94,18 @@
 // form
 .form{
 	@extend %grid-2;
-	gap: 1rem;
-	textarea{
-		grid-column: 1/3;
-	}
-	.btn{
-		margin-top: 1rem;
-		@extend %background-dark;
-		grid-column: 1/3;
+	gap: 1rem .5rem;
 
-		&:hover{
-			@extend %background-primary;
+	textarea{
+		@include media600{
+			grid-column: 1/3;
+		}
+	}
+
+	.btn{
+		@extend %background-dark;
+		@include media600{
+			grid-column: 1/3;
 		}
 	}
 }
@@ -113,12 +114,16 @@
 .cta{
 	@include backgroundColor($primary);
 	@extend %text-center;
-	@extend %p7;
+	@extend %p6;
 	
 	h2{
-		font-size: 7rem;
+		font-size: 5rem;
 		text-transform: capitalize;
 		color: $white;
+
+		@include media600{
+			font-size: 5.5rem;
+		}
 	}
 }
 
@@ -147,6 +152,7 @@
 	background-repeat: no-repeat;
 	background-position: 20% 30%;
 	@extend %p2;
+	width: 100%;
 
 	.container{
 		@extend %flex-between;
@@ -162,7 +168,7 @@
 	.menu__link{
 		display: inline-block;
 		text-transform: uppercase;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: 500;
 		padding: 1.3rem 0;
 		color: $white;
@@ -170,5 +176,18 @@
 		&:hover{
 			border-bottom: 2px solid $white;
 		}
+	}
+}
+
+// contact
+.contact__form{
+	@extend %p7;
+}
+.contact__info{
+	@extend %background-dark;
+	@extend %p5;
+
+	a{
+		color: $white;
 	}
 }

@@ -5,6 +5,7 @@
 // title
 .title{
 	@extend %text-center;
+	margin-bottom: 5rem;
 
 	&__heading{
 		text-transform: uppercase;
