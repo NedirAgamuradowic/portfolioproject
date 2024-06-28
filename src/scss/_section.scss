@@ -200,3 +200,22 @@
 		@extend %p7;
 	}
 }
+
+// aboutpage
+.aboutpage__about{
+	@extend %p4;
+
+	.award-container{
+		margin-top: 5rem;
+	}
+}
+.aboutpage{
+	.skill{
+		@extend %background-dark;
+		@extend %p5;
+	}
+}
+
+.aboutpage__testimonial{
+	@extend %p7;
+}

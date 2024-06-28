@@ -89,7 +89,11 @@ textarea, input {
   padding: 2rem 1rem;
 }
 
-.contact__info, .box {
+.aboutpage__about {
+  padding: 4rem 1rem;
+}
+
+.aboutpage .skill, .contact__info, .box {
   padding: 5rem 1rem;
 }
 
@@ -97,7 +101,7 @@ textarea, input {
   padding: 6rem 1rem;
 }
 
-.workpage .main, .contact__form {
+.aboutpage__testimonial, .workpage .main, .contact__form {
   padding: 7rem 1rem;
 }
 
@@ -192,7 +196,7 @@ textarea, input {
   color: #333333;
 }
 
-.contact__info, .footer, .form .btn, .process-item .card__img:hover::after, .process-item .card__img {
+.aboutpage .skill, .contact__info, .footer, .form .btn, .process-item .card__img:hover::after, .process-item .card__img {
   background: #333333;
   color: #fff;
 }
@@ -672,4 +676,8 @@ textarea {
 
 .contact__info a {
   color: #fff;
+}
+
+.aboutpage__about .award-container {
+  margin-top: 5rem;
 }
