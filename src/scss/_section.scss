@@ -11,13 +11,20 @@
 // box
 .box-container{
 	@extend %grid-4;
-	gap: 0;
+	gap:unset;
 
 	.box:nth-child(odd){
 		@extend %background-light;
 	}
 	.box:nth-child(even){
 		@extend %background-darklight;
+	}
+
+	@include media600{
+		gap: 0;
+	}
+	@include media768{
+		gap: 0;
 	}
 }
 
@@ -147,10 +154,7 @@
 
 // navbar
 .navbar{
-	background: $background url('../img/showcase.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 20% 30%;
+	background: $background url('../img/showcase.jpg') 20% 30% / cover no-repeat;
 	@extend %p2;
 	width: 100%;
 	border-bottom: 3px solid $primary;
@@ -228,13 +232,15 @@
 	}
 
 	.header{
+		min-height: 500px;
 		min-height: 100vh;
-		background: $background url('../img/showcase.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
+		background: $background url('../img/showcase.jpg') center  / cover no-repeat;
 		display: flex;
 		flex-direction: column;
+
+		@media (orientation: portrait) {
+			min-height:  600px;
+		}
 	}
 	.hero{
 		flex-grow: 1;
@@ -243,6 +249,7 @@
 		&__content{
 			@extend %text-center;
 			color: $white;
+			margin: 2rem;
 		}
 		&__heading{
 			text-transform: uppercase;

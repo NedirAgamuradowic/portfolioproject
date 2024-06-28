@@ -6,9 +6,7 @@ const plumber = require('gulp-plumber');
 
 
 // html plugins
-const webpHTML = require('gulp-webp-html');
 const htmlmin = require('gulp-htmlmin');
-
 
 // scss plugins
 const sass = require('gulp-sass')(require('sass'));
@@ -89,7 +87,6 @@ const clear = () =>{
 function html() {
 	return src(path.html.src)
 	.pipe(plumber())
-	.pipe(webpHTML())
 	.pipe(htmlmin(config.html))
 	.pipe(dest(path.html.dest))
 	.pipe(browserSync.stream())
