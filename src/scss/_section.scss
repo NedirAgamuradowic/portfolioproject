@@ -219,3 +219,58 @@
 .aboutpage__testimonial{
 	@extend %p7;
 }
+
+// home page
+.home{
+	.navbar{
+		border-bottom: none;
+		background: transparent;
+	}
+
+	.header{
+		min-height: 100vh;
+		background: $background url('../img/showcase.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+	}
+	.hero{
+		flex-grow: 1;
+		@extend %flex-center;
+
+		&__content{
+			@extend %text-center;
+			color: $white;
+		}
+		&__heading{
+			text-transform: uppercase;
+			font-weight: 600;
+			margin-bottom: 1rem;
+
+			@include media600{
+				font-size: 6rem;
+			}
+		}
+		&__tagline{
+			font-size: 2.5rem;
+			opacity: .8;
+			max-width: 80%;
+			margin: 0 auto;
+			margin-bottom: 3rem;
+		
+		}
+		.btn{
+			@extend %background-light;
+			font-weight: 500;
+
+			&:hover{
+				@extend %background-primary;
+			}
+		}
+	}
+}
+.home__spec, .home__process{
+	@extend %p7;
+}

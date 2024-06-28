@@ -101,15 +101,15 @@ textarea, input {
   padding: 6rem 1rem;
 }
 
-.aboutpage__testimonial, .workpage .main, .contact__form {
+.home__spec, .home__process, .aboutpage__testimonial, .workpage .main, .contact__form {
   padding: 7rem 1rem;
 }
 
-.navbar .menu, .footer .social, .testimonial-item, .author, .card, .about, .navbar .container, .footer .container, .box, .process-item .card__img::after, .process-item .card__img, .footer .icon {
+.navbar .menu, .footer .social, .testimonial-item, .author, .card, .about, .navbar .container, .footer .container, .home .hero, .box, .process-item .card__img::after, .process-item .card__img, .footer .icon {
   display: flex;
 }
 
-.box, .process-item .card__img::after, .process-item .card__img, .footer .icon, .about, .navbar .container, .footer .container {
+.home .hero, .box, .process-item .card__img::after, .process-item .card__img, .footer .icon, .about, .navbar .container, .footer .container {
   align-items: center;
   justify-content: center;
 }
@@ -175,7 +175,7 @@ textarea, input {
   }
 }
 
-.cta, .about__content, .card, .title, .btn {
+.home .hero__content, .cta, .about__content, .card, .title, .btn {
   text-align: center;
 }
 
@@ -191,7 +191,7 @@ textarea, input {
   border-radius: 100%;
 }
 
-.work-item span, .figma .range__skill::after, .javascript .range__skill::after, .html .range__skill::after, .ux .range__skill::after, .design .range__skill::after, .process-item .card__img:hover, .process-item .card__img::after, .footer .icon:hover {
+.home .hero .btn:hover, .work-item span, .figma .range__skill::after, .javascript .range__skill::after, .html .range__skill::after, .ux .range__skill::after, .design .range__skill::after, .process-item .card__img:hover, .process-item .card__img::after, .footer .icon:hover {
   background: #FFBC00;
   color: #333333;
 }
@@ -201,7 +201,7 @@ textarea, input {
   color: #fff;
 }
 
-.mate-container, .about__content, .box-container .box:nth-child(odd), .figma .range__skill, .javascript .range__skill, .html .range__skill, .ux .range__skill, .design .range__skill {
+.home .hero .btn, .mate-container, .about__content, .box-container .box:nth-child(odd), .figma .range__skill, .javascript .range__skill, .html .range__skill, .ux .range__skill, .design .range__skill {
   background: #F4F4F4;
   color: #333333;
 }
@@ -680,4 +680,44 @@ textarea {
 
 .aboutpage__about .award-container {
   margin-top: 5rem;
+}
+
+.home .navbar {
+  border-bottom: none;
+  background: transparent;
+}
+.home .header {
+  min-height: 100vh;
+  background: #67809F url("../img/showcase.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+.home .hero {
+  flex-grow: 1;
+}
+.home .hero__content {
+  color: #fff;
+}
+.home .hero__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+@media (min-width:600px) {
+  .home .hero__heading {
+    font-size: 6rem;
+  }
+}
+.home .hero__tagline {
+  font-size: 2.5rem;
+  opacity: 0.8;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.home .hero .btn {
+  font-weight: 500;
 }
